@@ -1,0 +1,26 @@
+<div class="container">
+    <form (ngSubmit)="registrar()" ngNativeValidate class="row g-3">
+        <div>
+            <b><legend class="text-center header">Guardar</legend></b>
+        </div>
+        <div class="col-md-6">
+            <label for="marca" class="form-label">Marca</label>
+            <input [(ngModel)]='nuevoAuto.marca' [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="marca">
+        </div>
+        <div class="col-md-6">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input [(ngModel)]='nuevoAuto.modelo' [ngModelOptions]="{standalone: true}" type="number" class="form-control" id="modelo">
+        </div>
+        <div class="col-md-6">
+            <label for="color" class="form-label">Color</label>
+            <input [(ngModel)]='nuevoAuto.color' [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="color">
+        </div>
+        <div class="col-md-6">
+            <label for="precio" class="form-label">Precio</label>
+            <input [(ngModel)]='nuevoAuto.precio' [ngModelOptions]="{standalone: true}" type="number" class="form-control" id="precio">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+    </form>
+</div>
